@@ -24,10 +24,12 @@ Abra http://localhost:4173. Sirva sempre a pasta `dist` como raiz: as páginas u
 
 ## Publicação
 
-A POC no GitHub Pages é publicada automaticamente a cada push na `main`:
+A POC no GitHub Pages está disponível em:
 https://matheuscarvalhofarias.github.io/cozybed-home/
 
-O workflow `.github/workflows/pages.yml` executa `node scripts/build-pages.mjs`, adapta os caminhos para o prefixo do Pages e publica `_site`. O conteúdo original de `dist` permanece compatível com hospedagem na raiz. Em Settings → Pages, a origem deve ser **GitHub Actions**.
+A publicação atual usa **Deploy from a branch → gh-pages → / (root)**. A branch `main` contém o código-fonte; `gh-pages` contém o conteúdo gerado por `node scripts/build-pages.mjs`, que adapta os caminhos para `/cozybed-home/`. O conteúdo original de `dist` permanece compatível com hospedagem na raiz. Alterações na `main` precisam ser preparadas e enviadas também à `gh-pages` para atualizar a POC.
+
+O workflow `.github/workflows/pages.yml` ficou disponível apenas para execução manual, caso se opte futuramente pela origem **GitHub Actions**. Ele não é a forma de publicação ativa.
 
 Site estático, sem etapa de build. Configure a pasta de publicação como `dist` em uma hospedagem estática.
 
