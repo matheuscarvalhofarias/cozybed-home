@@ -6,7 +6,7 @@
 .announcement{position:absolute;top:0;left:0;width:100%;z-index:7;background:transparent;border-bottom:1px solid #ffffff25;color:#fff}
 header{position:fixed;top:32px;left:0;width:100%;background:transparent;color:#fff;border-bottom:1px solid #ffffff30;transition:background .3s ease,color .3s ease,box-shadow .3s ease,top .3s ease}
 header.scrolled{top:0;background:#fff;color:var(--ink);border-bottom-color:var(--line);box-shadow:0 3px 20px #18211608}
-body:not(.inner-page) header:not(.scrolled) nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:6px}
+body:not(.inner-page) header:not(.scrolled):not(.menu-open) nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:6px}
 .inner-page header nav a:hover,.inner-page header nav a:focus-visible{color:#8b7757;text-decoration:underline;text-underline-offset:6px}
 .hero{height:100vh;height:100svh;min-height:620px;background:#72766e;color:#fff}
 .hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%;mix-blend-mode:normal}

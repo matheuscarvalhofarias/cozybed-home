@@ -1,4 +1,6 @@
 (() => {
+  // UI deterrent only: browser-delivered source remains accessible.
+  document.addEventListener('contextmenu', event => event.preventDefault());
   const header = document.querySelector('header');
   const toggle = header.querySelector('.menu-toggle');
   const nav = header.querySelector('#main-navigation');
